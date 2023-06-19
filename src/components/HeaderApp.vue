@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'MainApp',
+        name: 'HeaderApp',
         data(){
             return{
 
@@ -11,9 +11,9 @@
 
 <template>
     <div>
-        <h2>
-            Main
-        </h2>
+        <h1>
+            Header
+        </h1>
     </div>
 </template>
 

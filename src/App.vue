@@ -1,7 +1,24 @@
-<script setup>
+<script>
+import HeaderApp from './components/HeaderApp.vue';
+import MainApp from './components/MainApp.vue';
+
+export default {
+    name: 'App',
+    data(){
+        return{
+
+        }
+    },
+    components:{
+    HeaderApp,
+    MainApp,
+}
+}
 </script>
 
 <template>
+    <HeaderApp/>
+    <MainApp/>
 </template>
 
 <style>
