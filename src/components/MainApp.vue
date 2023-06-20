@@ -10,6 +10,7 @@ import axios from 'axios';
             return{
                 apiUrl:'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
                 store,
+                cardComponentList:[]
             }
         },
         props:{
@@ -22,6 +23,7 @@ import axios from 'axios';
              axios.get(this.apiUrl)
             .then( (response) => {
                 console.log(response.data.data);
+                this.cardComponentList = response.data.data;
             })
         }
     }
@@ -31,10 +33,10 @@ import axios from 'axios';
     <div >
         
         <div>
-            <CardComponent v-for="card in cardList"
+            <CardComponent v-for="card in cardComponentList"
                 :name="card.name"
                 :type="card.type"
-                :image="card.image"
+                :image="card.card_image[image_url]"
             />
         </div>
     </div>
