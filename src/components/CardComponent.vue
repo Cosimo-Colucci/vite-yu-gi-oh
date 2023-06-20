@@ -17,7 +17,15 @@
 
 <template>
     <div>
-        <span>fdsfc</span>
+        <img :src="image" class="" :alt="name + ' image'">
+        <div class="">
+            <h5 class="">
+                {{ name }}
+            </h5>
+            <p class="">
+                {{ species }} - <small class=""> {{ status }}</small>
+            </p>
+        </div>
     </div>
 </template>
 

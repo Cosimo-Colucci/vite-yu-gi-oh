@@ -12,23 +12,32 @@ import axios from 'axios';
                 store,
             }
         },
+        props:{
+            cardList : Array,
+        },
         components: {
             CardComponent,
         },
         created(){
              axios.get(this.apiUrl)
             .then( (response) => {
-                console.log(response);
+                console.log(response.data.data);
             })
         }
     }
 </script>
 
 <template>
-    <div>
-        <h2>
-            Main
-        </h2>
+    <div >
+        
+        <div>
+            <CardComponent v-for="card in cardList"
+                :name="card.name"
+                :species="card.species"
+                :status="card.status"
+                :image="card.image"
+            />
+        </div>
     </div>
 </template>
 
