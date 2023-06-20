@@ -5,6 +5,12 @@
                 return{
 
                 }
+            },
+            props:{
+                name : String,
+                species : String,
+                status : String,
+                image : String,
             }
         }
 </script>
