@@ -10,10 +10,10 @@
 </script>
 
 <template>
-    <div class="H-info">
-        <div class="H-logo">
+    <div class="">
+        <div class="">
         </div>
-        <div class="H-title">
+        <div class="">
             <h1>
                 Yu-Gi-Oh Api
             </h1>
