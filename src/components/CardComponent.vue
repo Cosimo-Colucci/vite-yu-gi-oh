@@ -15,17 +15,15 @@
 </script>
 
 <template>
-    <div>
-        <img :src="image" class="" :alt="name + ' image'">
-        <div class="">
-            <h5 class="">
-                {{ name }}
-            </h5>
-            <p class="">
-                {{ type }}
-            </p>
-        </div>
-    </div>
+
+<div class="card col-3" style="width: 18rem;">
+  <img :src="image" class="card-img-top" :alt="name + ' image'">
+  <div class="card-body">
+    <h5 class="card-title">{{ name }}</h5>
+    <p class="card-text">{{ type }}</p>
+  </div>
+</div>
+    
 </template>
 
 <style>

@@ -30,16 +30,19 @@ import axios from 'axios';
 </script>
 
 <template>
-    <div >
         
-        <div>
-            <CardComponent v-for="card in cardComponentList"
-                :name="card.name"
-                :type="card.type"
-                :image="card.card_images[0].image_url"
-            />
+        <div class="container">
+            <div class="row">
+                
+                <CardComponent v-for="card in cardComponentList"
+                    :name="card.name"
+                    :type="card.type"
+                    :image="card.card_images[0].image_url"
+                />
+
+            </div>
         </div>
-    </div>
+
 </template>
 
 <style lang="scss">

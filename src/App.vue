@@ -13,7 +13,6 @@ export default {
     components: {
         HeaderApp,
         MainApp,
-        CardComponent,
 
     }
 }
@@ -23,7 +22,6 @@ export default {
 
     <HeaderApp/>
     <MainApp/>
-    <CardComponent/>
 
 </template>
 
