@@ -36,7 +36,7 @@ import axios from 'axios';
             <CardComponent v-for="card in cardComponentList"
                 :name="card.name"
                 :type="card.type"
-                :image="card.card_image[image_url]"
+                :image="card.card_images[0].image_url"
             />
         </div>
     </div>
