@@ -10,12 +10,16 @@
 </script>
 
 <template>
-    <div>
-        <h1>
-            Header
-        </h1>
+    <div class="H-info">
+        <div class="H-logo">
+        </div>
+        <div class="H-title">
+            <h1>
+                Yu-Gi-Oh Api
+            </h1>
+        </div>
     </div>
 </template>
 
-<style>
+<style lang="scss">
 </style>

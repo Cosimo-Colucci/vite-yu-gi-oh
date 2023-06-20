@@ -12,6 +12,7 @@ export default {
     components:{
     HeaderApp,
     MainApp,
+
 }
 }
 </script>
@@ -21,5 +22,6 @@ export default {
     <MainApp/>
 </template>
 
-<style>
+<style lang="scss">
+    @import './styles/general.scss';
 </style>

@@ -1,10 +1,16 @@
 <script>
+import CardComponent from './CardComponent.vue';
+import {store} from '../store'
+
     export default{
         name: 'MainApp',
         data(){
             return{
-
+                store,
             }
+        },
+        components: {
+            CardComponent,
         }
     }
 </script>
@@ -17,5 +23,5 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
 </style>
