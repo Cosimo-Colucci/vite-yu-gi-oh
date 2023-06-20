@@ -8,8 +8,7 @@
             },
             props:{
                 name : String,
-                species : String,
-                status : String,
+                type : String,
                 image : String,
             }
         }
@@ -23,7 +22,7 @@
                 {{ name }}
             </h5>
             <p class="">
-                {{ species }} - <small class=""> {{ status }}</small>
+                {{ type }}
             </p>
         </div>
     </div>

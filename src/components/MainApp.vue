@@ -33,8 +33,7 @@ import axios from 'axios';
         <div>
             <CardComponent v-for="card in cardList"
                 :name="card.name"
-                :species="card.species"
-                :status="card.status"
+                :type="card.type"
                 :image="card.image"
             />
         </div>
