@@ -1,5 +1,6 @@
 <script>
 import CardComponent from './CardComponent.vue';
+import SelectComponent from './SelectComponent.vue';
 
 import {store} from '../store.js'
 import axios from 'axios';
@@ -18,6 +19,7 @@ import axios from 'axios';
         },
         components: {
             CardComponent,
+            SelectComponent,
         },
         created(){
              axios.get(this.apiUrl)
@@ -30,7 +32,7 @@ import axios from 'axios';
 </script>
 
 <template>
-        
+        <SelectComponent/>
         <div class="container">
             <div class="row">
                 
